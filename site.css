@@ -81,6 +81,15 @@ header a img {
 	margin-top:5px;
 }
 
+footer {
+	clear:both;
+}
+
+footer a {
+	float:right;
+}
+
+
 header .slogan {
 	font-family:sans-serif;
 	font-size:larger
