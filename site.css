@@ -16,19 +16,34 @@ header {
 	border-bottom-color:#666;
 }
 
+/* hack to make header grow to size of nav */
+header::after {
+	content:"";
+	clear:both;
+	display:table;
+}
+
 header a img {
 	float:left;
 	margin-right:20px;
-	margin-top:5px;
 	vertical-align: top;
 }
 
+header h1 {
+	height:85px; /* height of logo.png */
+	margin:0px;
+}
+
+header h2 {
+	margin:0px;
+	margin-top:1rem;
+}
+
 nav {
-	float: right;
-	vertical-align: top;
+	float:right;
 }
 nav a {
-	display: block;
+	display:block;
 	text-align:right;
 	text-decoration:none;
 	color:black;
@@ -37,12 +52,7 @@ nav a:hover {
 	text-decoration:underline;
 }
 
-article {
-	display:block;
-	clear:both;
-}
-
-@media screen and (max-width: 70ch) {
+@media screen and (max-width: 840px) {
 	body {
 		margin:1em;
 		font-size:12pt
@@ -54,6 +64,11 @@ article {
 	nav a {
 		text-align: left;
 	}
+}
+
+article {
+	display:block;
+	clear:both;
 }
 
 h1,h2,h3,h4,h5,h6 {
