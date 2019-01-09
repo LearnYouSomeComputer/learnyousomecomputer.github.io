@@ -8,6 +8,21 @@ body {
 	background-color:#ffffef;
 }
 
+header {
+	margin-bottom:2rem;
+	padding-bottom:0.5em;
+	border-bottom-style:inset;
+	border-bottom-width:2px;
+	border-bottom-color:#666;
+}
+
+header a img {
+	float:left;
+	margin-right:20px;
+	margin-top:5px;
+	vertical-align: top;
+}
+
 nav {
 	float: right;
 	vertical-align: top;
@@ -27,7 +42,7 @@ article {
 	clear:both;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 70ch) {
 	body {
 		margin:1em;
 		font-size:12pt
@@ -75,25 +90,6 @@ a {
 	padding:0px;
 }
 
-header a img {
-	float:left;
-	margin-right:20px;
-	margin-top:5px;
-}
-
-footer {
-	clear:both;
-}
-
-footer a img {
-	float:right;
-}
-
-
-header .slogan {
-	font-family:sans-serif;
-	font-size:larger
-}
 dl dt {
 	font-weight:bold;
 	display:inline-block;
@@ -108,7 +104,16 @@ dl dd:after {
 	content:'';
 	margin-bottom:.75em
 }
+
 footer {
 	font-size:smaller;
-	margin-top:2rem
+	margin-top:2rem;
+	padding-top:0.5em;
+	border-top-style:inset;
+	border-top-width:2px;
+	border-top-color:#666;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	clear:both;
 }
