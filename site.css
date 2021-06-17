@@ -69,6 +69,8 @@ nav a:hover {
 article {
 	display:block;
 	clear:both;
+	text-align:justify;
+	text-justify:inter-word;
 }
 
 h1,h2,h3,h4,h5,h6 {
