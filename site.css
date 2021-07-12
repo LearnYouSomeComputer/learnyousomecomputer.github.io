@@ -70,6 +70,7 @@ article {
 	display:block;
 	clear:both;
 	text-align:justify;
+	text-align-last:start;
 	text-justify:inter-word;
 }
 
